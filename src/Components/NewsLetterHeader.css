@@ -1,0 +1,110 @@
+.NewsLetter-container{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: inline-flex;
+}
+.NewsLetter-container h1{
+    margin-top: 1.5rem;
+    color: aliceblue;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: 2px;
+    margin-left: 2rem;
+}
+.rightLetter {
+    width: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4rem;
+    gap: 1rem;
+}
+.rightLetter a{
+    list-style: none;
+    padding: 1rem;
+}
+.rightLetter a>input {   
+    margin-top: 1.5rem;
+    padding: 0.4rem;
+    padding-left: 0.5rem;
+    font-size: 1.3rem;
+    width: auto;   
+}
+.btn {
+    font-size: medium;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    width: max-content;
+    border-radius: 0.5rem;
+    border: 1.5px solid rgb(117, 99, 223);
+    font-family: 'Poppins', sans-serif;
+    color: rgb(117, 99, 223);
+    background-color: aliceblue;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.btn1:hover {
+    border: 1px solid aliceblue;
+    background-color: rgb(117, 99, 223);
+    color: aliceblue;
+}
+
+
+@media(max-width:1063px){
+    .rightLetter{
+        gap: 0rem;
+    }
+    .rightLetter a{
+        padding: 0.2rem; 
+    }
+}
+@media(max-width:1010px){
+    .NewsLetter-container{
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    } 
+    .NewsLetter-container h1{
+        margin-right: 4rem;
+    }
+    .rightLetter{
+        gap: 1rem;
+    }
+    .rightLetter a{
+        padding: 1rem;
+    }
+}
+@media(max-width:900px){
+    .NewsLetter-container{
+        flex-direction: column;
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .NewsLetter-container h1{
+        text-align: center;
+    }
+    .rightLetter{
+        width: 80%;
+    }
+}
+@media(max-width:530px){
+    .NewsLetter-container h1{
+        letter-spacing: 0px;
+        width: 100%;
+        justify-content: left;
+        margin-left: 0rem;
+    }
+    .rightLetter{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        gap: 0rem;
+    }
+}
+
+
+
+
